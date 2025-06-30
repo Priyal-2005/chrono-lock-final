@@ -10,11 +10,19 @@ const BoltVerifiedBadge: React.FC = () => {
         className="block transition-all duration-300 hover:scale-110"
         title="Powered by Bolt.new"
       >
-        <img 
-          src="/white_circle_360x360.png" 
-          alt="Powered by Bolt.new" 
-          className="w-20 h-20 drop-shadow-lg group-hover:drop-shadow-xl transition-all duration-300"
-        />
+        <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20 group-hover:bg-white/20 transition-all duration-300">
+          <div className="text-center">
+            <div className="text-white font-bold text-xs leading-tight">
+              BUILT
+            </div>
+            <div className="text-white font-bold text-xs leading-tight">
+              WITH
+            </div>
+            <div className="text-white font-bold text-xs leading-tight">
+              BOLT
+            </div>
+          </div>
+        </div>
       </a>
     </div>
   );
