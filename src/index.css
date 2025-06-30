@@ -176,45 +176,90 @@
   }
 }
 
-@keyframes shimmer {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+/* Define all keyframe animations */
+@keyframes twinkle {
+  0%, 100% { 
+    opacity: 0.3; 
+    transform: scale(1); 
+  }
+  50% { 
+    opacity: 1; 
+    transform: scale(1.1); 
+  }
 }
 
-@keyframes twinkle {
-  0%, 100% { opacity: 0.3; transform: scale(1) }
-  50% { opacity: 1; transform: scale(1.1) }
+@keyframes shimmer {
+  0%, 100% { 
+    background-position: 0% 50%; 
+    opacity: 0.5; 
+    transform: scale(1); 
+  }
+  50% { 
+    background-position: 100% 50%; 
+    opacity: 1; 
+    transform: scale(1.05); 
+  }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px) rotate(0deg) }
-  33% { transform: translateY(-15px) rotate(120deg) }
-  66% { transform: translateY(8px) rotate(240deg) }
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+  33% { 
+    transform: translateY(-15px) rotate(120deg); 
+  }
+  66% { 
+    transform: translateY(8px) rotate(240deg); 
+  }
 }
 
 @keyframes drift {
-  0% { transform: translateX(-100px) translateY(0px) }
-  100% { transform: translateX(calc(100vw + 100px)) translateY(-30px) }
-}
-
-@keyframes pulse-gentle {
-  0%, 100% { opacity: 0.4 }
-  50% { opacity: 0.8 }
-}
-
-@keyframes breathe {
-  0%, 100% { transform: scale(1) }
-  50% { transform: scale(1.02) }
+  0% { 
+    transform: translateX(-100px) translateY(0px); 
+  }
+  100% { 
+    transform: translateX(calc(100vw + 100px)) translateY(-30px); 
+  }
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(30px) }
-  100% { opacity: 1; transform: translateY(0) }
+  0% { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
 }
 
 @keyframes slideUp {
-  0% { transform: translateY(40px); opacity: 0 }
-  100% { transform: translateY(0); opacity: 1 }
+  0% { 
+    transform: translateY(40px); 
+    opacity: 0; 
+  }
+  100% { 
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+@keyframes pulse-gentle {
+  0%, 100% { 
+    opacity: 0.4; 
+  }
+  50% { 
+    opacity: 0.8; 
+  }
+}
+
+@keyframes breathe {
+  0%, 100% { 
+    transform: scale(1); 
+  }
+  50% { 
+    transform: scale(1.02); 
+  }
 }
 
 /* Scrollbar styling */
