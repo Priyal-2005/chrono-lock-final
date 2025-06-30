@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Clock, Home, Mic, Archive, Wallet, Star } from 'lucide-react';
 import { useWallet } from '../contexts/WalletContext';
 import StarField from './StarField';
+import BoltVerifiedBadge from './BoltVerifiedBadge';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -134,6 +135,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
         </div>
       </nav>
+
+      {/* Bolt Verified Badge */}
+      <BoltVerifiedBadge />
     </div>
   );
 };

@@ -40,31 +40,6 @@ const HomePage: React.FC = () => {
       <div className="absolute top-64 right-24 w-32 h-32 bg-nebula-500/[0.06] rounded-full blur-2xl animate-float" style={{ animationDelay: '3s' }} />
       <div className="absolute bottom-48 left-1/3 w-24 h-24 bg-aurora-500/[0.05] rounded-full blur-xl animate-float" style={{ animationDelay: '6s' }} />
 
-      {/* Built with Bolt.new Badge */}
-      <div className="fixed bottom-6 left-6 z-50">
-        <a
-          href="https://bolt.new/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group block transition-transform duration-300 hover:scale-110 hover:drop-shadow-lg"
-          title="Built with Bolt.new"
-        >
-          <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20 group-hover:bg-white/20 transition-all duration-300">
-            <div className="text-center">
-              <div className="text-white font-bold text-xs leading-tight">
-                BUILT
-              </div>
-              <div className="text-white font-bold text-xs leading-tight">
-                WITH
-              </div>
-              <div className="text-white font-bold text-xs leading-tight">
-                BOLT
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
       {/* Hero Section */}
       <div className="text-center max-w-6xl mx-auto mb-32 relative">
         <div className="mb-16 animate-fade-in">
