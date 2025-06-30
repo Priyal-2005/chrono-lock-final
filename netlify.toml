@@ -1,0 +1,38 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[context.production.environment]
+  VITE_DEV_MODE = "false"
+  # Add your Pinata JWT token here for IPFS to work
+  # VITE_PINATA_JWT = "your_pinata_jwt_token_here"
+
+[context.deploy-preview.environment]
+  VITE_DEV_MODE = "false"
+  # VITE_PINATA_JWT = "your_pinata_jwt_token_here"
+
+[context.branch-deploy.environment]
+  VITE_DEV_MODE = "false"
+  # VITE_PINATA_JWT = "your_pinata_jwt_token_here"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "microphone=(), camera=(), geolocation=(), payment=()"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
